@@ -35,6 +35,7 @@
 #define CLOSE LALT(LSFT(KC_Q))
 #define OPENTERM LALT(KC_ENT)
 #define MASTSWP LALT(LSFT(KC_ENT))
+#define DMENU LALT(KC_D)
 #define LOCK LALT(LSFT(KC_X))
 #define FULLSCR LALT(KC_M)
 #define FOCLEFT LALT(KC_H)
