@@ -29,7 +29,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[_NUM] = LAYOUT(
     DF(_COL),DF(_QWE), XXXXXXX, KC_MUTE, KC_BRID, KC_BRIU,  KC_7  ,  KC_8  ,  KC_9  , XXXXXXX,
 	  OM(LGUI),OM(LALT),OM(LCTL),OM(LSFT), KC_VOLD, KC_VOLU,  KC_4  ,  KC_5  ,  KC_6  , XXXXXXX,
-	   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  KC_0  ,  KC_1  ,  KC_2  ,  KC_3  , XXXXXXX,
+	   KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, XXXXXXX,  KC_0  ,  KC_1  ,  KC_2  ,  KC_3  , XXXXXXX,
 	                              _______, _______, _______, _______
   ),
 	[_HYP] = LAYOUT(
