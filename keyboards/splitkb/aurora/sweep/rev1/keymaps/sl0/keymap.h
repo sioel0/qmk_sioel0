@@ -20,19 +20,22 @@
 #define SYM_ENT LT(_SYM, KC_ENT)
 
 // tmux and general shortcuts
-#define TMUXLEAD LCTL(KC_A)
-#define UNDO LCTL(KC_Z)
-#define SAVE LCTL(KC_S)
-#define COPY LCTL(KC_C)
-#define PASTE LCTL(KC_V)
-#define TERMLOUT LCTL(KC_D)
-#define TERMCLR LCTL(KC_L)
-#define TERMDLN LCTL(KC_K)
-#define NEXTELEM LCTL(KC_N)
-#define PREVELEM LCTL(KC_P)
+#define CTL_A LCTL(KC_A)
+#define CTL_Z LCTL(KC_Z)
+#define CTL_S LCTL(KC_S)
+#define CTL_C LCTL(KC_C)
+#define CTL_V LCTL(KC_V)
+#define CTL_D LCTL(KC_D)
+#define CTL_L LCTL(KC_L)
+#define CTL_K LCTL(KC_K)
+#define CTL_P LCTL(KC_P)
+#define CTL_F LCTL(KC_F)
+#define CTL_L LCTL(KC_L)
+#define CTL_T LCTL(KC_T)
 
 // hyprland shortcuts
 #define CLOSE LALT(LSFT(KC_Q))
+#define EXIT LALT(LSFT(KC_E))
 #define OPENTERM LALT(KC_ENT)
 #define MASTSWP LALT(LSFT(KC_ENT))
 #define DMENU LALT(KC_D)
@@ -51,13 +54,11 @@
 #define FOCWSP3 LALT(KC_3)
 #define FOCWSP4 LALT(KC_4)
 #define FOCWSP5 LALT(KC_5)
-#define FOCWSP6 LALT(KC_6)
 #define MOVWSP1 LALT(LSFT(KC_1))
 #define MOVWSP2 LALT(LSFT(KC_2))
 #define MOVWSP3 LALT(LSFT(KC_3))
 #define MOVWSP4 LALT(LSFT(KC_4))
 #define MOVWSP5 LALT(LSFT(KC_5))
-#define MOVWSP6 LALT(LSFT(KC_6))
 
 
 // LAYERS
