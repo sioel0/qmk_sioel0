@@ -15,7 +15,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	                             NAV_TAB , RA(SPC),HYP_BSPC, SYM_ENT
   ),
 	[_NAV] = LAYOUT(
-     KC_ESC , XXXXXXX, CTL_F , XXXXXXX, XXXXXXX, XXXXXXX, CTL_L, XXXXXXX, XXXXXXX, XXXXXXX,
+     KC_ESC , CTL_W, CTL_F , XXXXXXX, XXXXXXX, XXXXXXX, CTL_L, XXXXXXX, XXXXXXX, XXXXXXX,
 	  CTL_A, XXXXXXX, CTL_S, OM(LSFT), XXXXXXX, KC_LEFT, KC_DOWN,  KC_UP ,KC_RIGHT, XXXXXXX,
 	    CTL_Z, CTL_X, CTL_C, CTL_D, CTL_V, CTL_A, CTL_N,CTL_P, XXXXXXX, XXXXXXX,
 	                             _______ , _______, _______, _______
@@ -60,13 +60,13 @@ bool caps_word_press_user(uint16_t keycode) {
 		  add_weak_mods(MOD_BIT(KC_LSFT));
 		  return true;
 
-    // continue caps word without shifting		
-		case KC_1 ... KC_0: 
+    // continue caps word without shifting
+		case KC_1 ... KC_0:
 		case KC_BSPC:
 		case KC_DEL:
 		case KC_UNDS:
 		  return true;
-    
+
 		// disable caps word
 		default:
 		  return false;
@@ -94,7 +94,7 @@ uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
 		case SYM_ENT:
 		  return 150;
 		default:
-		  return TAPPING_TERM; 
+		  return TAPPING_TERM;
 	}
 }
 
@@ -125,7 +125,7 @@ bool oled_task_user(void) {
 	if(is_keyboard_master()) {
 	  // sioel0 logo height 64 bit
 		render_sioel0_logo();
-		
+
 		// activate line based on layer height 40
 		if(default_layer_state == _COL) {
 			oled_write_P(PSTR(" COL "), current_layer == _COL);
@@ -163,10 +163,10 @@ bool oled_task_user(void) {
 		} else {
 			oled_write_P(PSTR("R"), false);
 		}
-		
+
 		// padding height 8 bit
 		oled_write_P(PSTR("      "), false);
-		
+
 		// check caps woc rd state height 8 bit
 		oled_write_P(is_caps_word_on() ? PSTR("CAPS") : PSTR("    "), false);
 	} else {
